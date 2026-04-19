@@ -1,0 +1,5 @@
+server:
+  port: 8081
+env:
+  description: "测试环境 - 预发布验证"
+  debug: true

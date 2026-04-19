@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: dev # 可切换为 test/prod
+app:
+  name: springboot-hello
+  version: 1.0.0

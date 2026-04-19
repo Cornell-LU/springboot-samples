@@ -1,0 +1,14 @@
+team:
+  leader : "张三"
+  age : 35
+  email : niit@163.com
+  phone : 19522223333
+  createTime : "1991-01-02"
+spring:
+  application:
+    name: springboot-week04
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB   # 默认1MB
+      max-request-size: 100MB # 默认10MB

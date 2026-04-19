@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 注意：这里使用你截图中的完整包名 -->
+<mapper namespace="top.kenan.springbootweek05.mapper.UserMapper">
+
+    <!-- 条件查询：username 模糊 + age 下限 -->
+    <select id="selectByCondition" resultType="top.kenan.springbootweek05.entity.User">
+        SELECT * FROM t_user
+        <where>
+            <if test="username != null and username != ''">
+                AND username LIKE CONCAT('%', #{username}, '%')
+            </if>
+            <if test="minAge != null">
+                AND age >= #{minAge}
+            </if>
+        </where>
+    </select>
+
+</mapper>
