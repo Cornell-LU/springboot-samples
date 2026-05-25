@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: springboot-samples
+  mail:
+    host: smtp.qq.com #???????
+    username: 1878996697@qq.com #????
+    password: bdilucrfvlhqdeeh #??????
+    protocol: smtp #??????
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.port: 465 #???465?587
+    properties.mail.display.sendmail: Java #????
+    properties.mail.display.sendname: Spring Boot Email #????
+    properties.mail.smtp.ssl.enable: true
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+    default-encoding: utf-8
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost1:3306/scheduled_demo?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: aA123456!
+
+app:
+  weather:
+    api-key: 69da416d8d184f8e8d55fdb9edfd25d2  # 替换为你的和风天气 API Key
+    city: 101190101             # 替换为你查询到的城市 LocationID
